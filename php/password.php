@@ -22,6 +22,7 @@ if($submit){
                 $data = mysqli_fetch_array($result);
                 $email = $data['email'];
                 $password = $data['pass'];
+                $subject = "Password";
                 mail($email, $subject, $password);
 
             }else{

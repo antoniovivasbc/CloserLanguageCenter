@@ -22,9 +22,11 @@ include("conexao/conexao.php");
                     <input type="email" placeholder="E-mail" name="email" required>
                     <input type="password" placeholder="Password" name="password" required> <br>
                     <?php include("php/recaptcha.php"); ?>
+                    <div class="captcha-container">
+                        <div class="g-recaptcha" data-sitekey="6LdguZ8eAAAAAKmE4u_t6jhOqA12MbbVn4ixfAk7"></div>
+                    </div>
                     <input class="enviar" type="submit" value="Get Closer" name="submit"><br>
                     <a href="forgot.php" class="passfgt">Forgot password?</a>
-                    <div class="g-recaptcha" data-sitekey="6LdguZ8eAAAAAKmE4u_t6jhOqA12MbbVn4ixfAk7"></div>
                 </form>
             </div>
         </div>

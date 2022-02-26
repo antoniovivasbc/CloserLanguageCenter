@@ -25,7 +25,6 @@ include("php/classesfinished.php");
     <link rel="stylesheet" href="css/course.css">
 </head>
 <body>
-    
     <section>
         <div class="sidebar">
             <img class="logo2" src="img/logo.jpg" alt="">

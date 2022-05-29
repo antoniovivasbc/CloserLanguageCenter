@@ -12,7 +12,7 @@ form.onsubmit = function(event){
     console.log(_name, _comment, today);
     document.getElementById("form").reset();
     $.ajax({
-        url: 'http://closerlanguagecenter.com/php/comment.php',
+        url: link+'php/comment.php',
         method: 'POST',
         data: {name: _name, comment: _comment, date: today},
         datatype: 'json',
@@ -23,7 +23,7 @@ form.onsubmit = function(event){
   };
 function getcomments(){
   $.ajax({
-    url: 'http://closerlanguagecenter.com/php/selectcom.php',
+    url: link+'php/selectcom.php',
     method: 'GET',
     datatype: 'json',
 }).done(function select(result){
@@ -38,7 +38,7 @@ function getcomments(){
 }
 function getcurrentcomment(){
     $.ajax({
-      url: 'http://closerlanguagecenter.com/php/selectcom.php',
+      url: link+'php/selectcom.php',
       method: 'GET',
       datatype: 'json',
   }).done(function select(result){

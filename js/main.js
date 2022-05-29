@@ -5,7 +5,9 @@ var sidebar_status = false;
 var sidebar = document.querySelector(".sidebar");
 var content = document.querySelector(".content");
 var masc = document.querySelector(".masc0");
-
+var link = window.location.href;
+var currentPage = link.split('/').pop();
+link = link.split(currentPage)[0];
 if( /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
     sidebar_status = true;
 }
@@ -121,6 +123,6 @@ function dropdown(){
 }
 /*DROPDOWN END*/
 function movetosettings(){
-    location.href = "http://closerlanguagecenter.coolpage.biz/settings";
+    location.href = link+"settings";
 }
 
